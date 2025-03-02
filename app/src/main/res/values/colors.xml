@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background Colors -->
+    <color name="black">#000000</color>
+    <color name="gray">#888888</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Neon Colors -->
+    <color name="neon_blue">#00FFFF</color>  <!-- Cyber Blue -->
+    <color name="neon_glow">#33FFFF</color>  <!-- Glow Effect -->
+    <color name="glowy_blue">#0088FF</color>  <!-- Button Fill -->
+
+    <!-- Stars and Space Theme -->
+    <color name="star_yellow">#FFD700</color> <!-- Gold for Stars -->
+    <color name="deep_space_blue">#0A0A2A</color> <!-- Dark Blue Hue -->
+
+    <!-- Input Field Glow -->
+    <color name="input_border">#00FFCC</color>
+</resources>

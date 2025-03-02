@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starry_background"
+    android:padding="16dp">
+
+    <!-- Glowing Pixel Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_logo_pixelated"
+        android:elevation="4dp" />
+
+    <!-- Horizontal Scroll View for Features -->
+    <HorizontalScrollView
+        android:id="@+id/featureScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <!-- Features Container (Fix: Ensure layout_width is wrap_content) -->
+        <LinearLayout
+            android:id="@+id/featuresContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Profile Feature (Fix: Explicit layout_width and layout_height) -->
+            <LinearLayout
+                android:id="@+id/profileFeature"
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:background="@drawable/neon_card"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:contentDescription="@string/profile"
+                    android:src="@drawable/ic_profile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:text="@string/profile1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <!-- Facial Attendance -->
+            <LinearLayout
+                android:id="@+id/facialAttendanceFeature"
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:background="@drawable/neon_card"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:contentDescription="@string/facescan"
+                    android:src="@drawable/ic_face_scan"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:text="@string/facial_attendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <!-- Geo-Fenced Location -->
+            <LinearLayout
+                android:id="@+id/geofenceFeature"
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:background="@drawable/neon_card"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:src="@drawable/ic_location"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:text="@string/geo_fence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <!-- Attendance Logs -->
+            <LinearLayout
+                android:id="@+id/attendanceLogsFeature"
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:background="@drawable/neon_card"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:src="@drawable/ic_logs"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:text="@string/attendance_logs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <!-- Other Features -->
+            <LinearLayout
+                android:id="@+id/otherFeature"
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:background="@drawable/neon_card"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:src="@drawable/ic_other"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:text="@string/more_features"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+
+    <!-- Outer Pixelated Square -->
+    <path
+        android:fillColor="@color/neon_blue"
+        android:pathData="M4,4 H124 V124 H4 Z"/>
+
+    <!-- Inner Black Square (Logo Shape) -->
+    <path
+        android:fillColor="@color/black"
+        android:pathData="M24,24 H104 V104 H24 Z"/>
+
+    <!-- Example "P" Letter Pixel (Modify this for your logo) -->
+    <path
+        android:fillColor="@color/neon_glow"
+        android:pathData="M40,40 H80 V80 H40 Z"/>
+
+</vector>

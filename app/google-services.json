@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "506175259869",
+    "project_id": "true-presence",
+    "storage_bucket": "true-presence.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506175259869:android:ace434d35d0be064708734",
+        "android_client_info": {
+          "package_name": "com.example.truepresence"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmNkyZ6WTzeL28Murff_1KvmyqtccK1HA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506175259869:android:d1f82989b5d21578708734",
+        "android_client_info": {
+          "package_name": "com.project.truepresence"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmNkyZ6WTzeL28Murff_1KvmyqtccK1HA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

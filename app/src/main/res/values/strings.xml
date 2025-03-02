@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">True Presence</string>
+    <string name="profile">PROFILE</string>
+    <string name="profile1">Profile</string>
+    <string name="facial_attendance">Facial Attendance</string>
+    <string name="geo_fence">Geo-Fence</string>
+    <string name="attendance_logs">Attendance Logs</string>
+    <string name="more_features">More Features</string>
+    <string name="facescan">FaceScan</string>
+</resources>
