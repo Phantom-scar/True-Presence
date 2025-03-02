@@ -83,14 +83,14 @@ class LoginActivity : AppCompatActivity() {
 
                 if (task.isSuccessful) {
                     showToast("Login Successful!")
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, DashboardActivity::class.java) // ✅ Redirecting to DashboardActivity
                     val options = ActivityOptions.makeCustomAnimation(
                         this,
                         android.R.anim.fade_in,  // Enter animation
                         android.R.anim.fade_out // Exit animation
                     ).toBundle()
                     startActivity(intent, options)
-                    finish()
+                    finish() // Close LoginActivity so user can't go back
                 } else {
                     showToast("Login Failed: ${task.exception?.message}")
                 }

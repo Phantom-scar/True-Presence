@@ -28,17 +28,18 @@
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".Dashboard"
+            android:name=".DashboardActivity"
             android:exported="false" />
         <activity
             android:name=".RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            android:theme= @style/Theme.SplashScreen>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

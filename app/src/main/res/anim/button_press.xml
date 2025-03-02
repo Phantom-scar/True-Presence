@@ -1,14 +1,18 @@
-<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
-    android:propertyName="scaleX"
-    android:duration="100"
-    android:valueFrom="1.0"
-    android:valueTo="0.95"
-    android:repeatMode="reverse"
-    android:repeatCount="1"/>
-<objectAnimator
-android:duration="100"
-android:propertyName="scaleY"
-android:repeatCount="1"
-android:repeatMode="reverse"
-android:valueFrom="1.0"
-android:valueTo="0.95" />
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:propertyName="scaleX"
+        android:duration="100"
+        android:valueFrom="1.0"
+        android:valueTo="0.95"
+        android:repeatMode="reverse"
+        android:repeatCount="1"/>
+
+    <objectAnimator
+        android:propertyName="scaleY"
+        android:duration="100"
+        android:valueFrom="1.0"
+        android:valueTo="0.95"
+        android:repeatMode="reverse"
+        android:repeatCount="1"/>
+</set>
