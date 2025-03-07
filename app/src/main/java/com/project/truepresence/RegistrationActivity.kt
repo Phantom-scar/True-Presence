@@ -22,6 +22,7 @@ class RegistrationActivity : AppCompatActivity() {
         val passwordField = findViewById<EditText>(R.id.password)
         val confirmPasswordField = findViewById<EditText>(R.id.confirmPassword)
         val registerButton = findViewById<Button>(R.id.registerButton)
+        val backToLoginButton = findViewById<Button>(R.id.backToLogin) // New Button
 
         registerButton.setOnClickListener {
             val email = emailField.text.toString()
@@ -47,6 +48,13 @@ class RegistrationActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        // New Button Click Listener
+        backToLoginButton.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()  // Finish RegistrationActivity to prevent back navigation
         }
     }
 }

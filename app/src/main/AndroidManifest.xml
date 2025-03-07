@@ -2,6 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- 🔹 Required Permissions -->
+    <uses-permission android:name="android.permission.CAMERA"/>  <!--  Camera Access -->
+    <uses-permission android:name="android.permission.INTERNET"/>  <!--  Firebase, APIs -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>  <!--  Check network -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>  <!--  Required for CameraX -->
+
+    <uses-feature android:name="android.hardware.camera.front" android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />  <!--  Uses Front Camera -->
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,36 +23,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TruePresence"
         tools:targetApi="31">
-        <activity
-            android:name=".OtherFeaturesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AttendanceLogsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GeofenceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FacialAttendanceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegistrationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+
+        <activity android:name=".OtherFeaturesActivity" android:exported="false" />
+        <activity android:name=".AttendanceLogsActivity" android:exported="false" />
+        <activity android:name=".GeofenceActivity" android:exported="false" />
+        <activity android:name=".FacialAttendanceActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".DashboardActivity" android:exported="false" />
+        <activity android:name=".RegistrationActivity" android:exported="false" />
+        <activity android:name=".LoginActivity" android:exported="false" />
+
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

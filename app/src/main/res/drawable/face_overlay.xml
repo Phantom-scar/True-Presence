@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer Transparent Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#80000000"/> <!-- Semi-transparent black -->
+        </shape>
+    </item>
+
+    <!-- Circular Cutout for Face Alignment -->
+    <item>
+        <inset android:top="50dp" android:bottom="50dp" android:left="50dp" android:right="50dp">
+            <shape android:shape="oval">
+                <solid android:color="@android:color/transparent"/> <!-- Transparent circle -->
+                <stroke android:width="4dp" android:color="@color/neon_blue"/> <!-- Glowing border -->
+            </shape>
+        </inset>
+    </item>
+
+</layer-list>
