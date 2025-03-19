@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.google.gms.google.services) // ✅ Keep only if using Firebase
 }
 
 android {
@@ -37,20 +37,37 @@ android {
 }
 
 dependencies {
+    // ✅ CameraX for Facial Recognition
     implementation(libs.camera.camera2)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.androidx.camera.lifecycle)
+
+    // ✅ AndroidX Core Components
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.recyclerview) // ✅ Added RecyclerView
+
+    // ✅ Firebase (Authentication & Firestore)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.firestore)
-    implementation(libs.vision.common)
-    implementation(libs.play.services.mlkit.face.detection)
-    implementation(libs.androidx.camera.view)
-    implementation(libs.androidx.camera.lifecycle)
+
+    // ✅ ML Kit Face Detection (For Facial Attendance)
+    implementation(libs.face.detection)
+
+    // ✅ Google Play Services (For Location)
+    implementation(libs.play.services.location)
+
+    // ✅ OpenStreetMap (OSMDroid) Instead of Google Maps
+    implementation(libs.osmdroid.android)  // ✅ Corrected OSMDroid dependency
+
+    // ✅ Guava (For ListenableFuture in CameraX)
+    implementation(libs.guava)
+
+    // ✅ Testing Libraries
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation(libs.guava)
 }

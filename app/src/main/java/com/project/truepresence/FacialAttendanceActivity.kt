@@ -63,7 +63,7 @@ class FacialAttendanceActivity : AppCompatActivity() {
                 val cameraSelector = CameraSelector.DEFAULT_FRONT_CAMERA
 
                 val preview = Preview.Builder().build().also {
-                    it.setSurfaceProvider(findViewById<androidx.camera.view.PreviewView>(R.id.cameraPreview).surfaceProvider)
+                    it.surfaceProvider = findViewById<androidx.camera.view.PreviewView>(R.id.cameraPreview).surfaceProvider // ✅ Fixed setter method usage
                 }
 
                 val imageAnalysis = ImageAnalysis.Builder()

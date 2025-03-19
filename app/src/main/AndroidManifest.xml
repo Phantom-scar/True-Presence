@@ -7,38 +7,55 @@
     <uses-permission android:name="android.permission.INTERNET"/>  <!--  Firebase, APIs -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>  <!--  Check network -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>  <!--  Required for CameraX -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
+    <!-- ✅ Required Features -->
     <uses-feature android:name="android.hardware.camera.front" android:required="true"/>
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />  <!--  Uses Front Camera -->
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>  <!--  Uses Front Camera -->
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_logo_glowy"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_logo_glowy"
         android:supportsRtl="true"
         android:theme="@style/Theme.TruePresence"
         tools:targetApi="31">
 
-        <activity android:name=".OtherFeaturesActivity" android:exported="false" />
-        <activity android:name=".AttendanceLogsActivity" android:exported="false" />
-        <activity android:name=".GeofenceActivity" android:exported="false" />
-        <activity android:name=".FacialAttendanceActivity" android:exported="false" />
-        <activity android:name=".ProfileActivity" android:exported="false" />
-        <activity android:name=".DashboardActivity" android:exported="false" />
-        <activity android:name=".RegistrationActivity" android:exported="false" />
-        <activity android:name=".LoginActivity" android:exported="false" />
+        <!-- ✅ OSMDroid Tile Cache Configuration -->
+        <meta-data
+            android:name="org.osmdroid.config"
+            android:value="true"/>
+
+        <!-- ✅ Google Play Services Version -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <!-- ✅ Google Location Services (Optional) -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_GOOGLE_MAPS_API_KEY"/>  <!-- If using Google Maps in the future -->
+
+        <activity android:name=".OtherFeaturesActivity" android:exported="false"/>
+        <activity android:name=".AttendanceLogsActivity" android:exported="false"/>
+        <activity android:name=".GeofenceActivity" android:exported="false"/>
+        <activity android:name=".FacialAttendanceActivity" android:exported="false"/>
+        <activity android:name=".ProfileActivity" android:exported="false"/>
+        <activity android:name=".DashboardActivity" android:exported="false"/>
+        <activity android:name=".RegistrationActivity" android:exported="false"/>
+        <activity android:name=".LoginActivity" android:exported="false"/>
 
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

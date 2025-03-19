@@ -26,4 +26,21 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="register">Register</string>
+    <string name="refresh_button">Refresh location</string>
+    <string name="refresh_location">Refresh</string>
+    <string name="checking_location">Checking location…</string>
+    <string name="geo_inside">✅ You are inside the geo-fence.</string>
+    <string name="geo_outside">🚫 Outside Geo-Fence. Nearest point: %1$.2f meters away</string>
+    <string name="map_view_description">Map showing geo-fence and user location</string>
+    <string name="refresh_button_description">Tap to refresh location and check geo-fence status</string>
+    <string name="geo_status_description">Displays whether you are inside or outside the geo-fenced area</string>
+    <string name="distance_description">Shows distance to the nearest geo-fence point</string>
+    <string name="geo_distance">🚶 Nearest Geo-Fence: %.2f meters away.</string>
+    <string name="geo_checking">Checking location…</string>
+    <string name="attendance_logs_title">Title: Attendance Logs</string>
+    <string name="attendance_logs_list">List of attendance records</string>
+    <string name="geo_failed">Failed to get location</string>
+    <string name="map_description">Map Description</string>
+    <string name="Login">Login</string>
+    <string name="email_address">Email Address</string>
 </resources>

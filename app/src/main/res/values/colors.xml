@@ -16,4 +16,14 @@
 
     <!-- Input Field Glow -->
     <color name="input_border">#00FFCC</color>
+
+    <color name="cyan_primary">#00E5FF</color>
+    <color name="cyan_transparent">#3300E5FF</color>
+    <color name="gray_dark">#424242</color>
+    <color name="gray_light">#BDBDBD</color>
+
+    <color name="cyan">#00BCD4</color> <!-- Cyan (Main Theme) -->
+    <color name="cyan_light">#80DEEA</color> <!-- Light Cyan -->
+    <color name="background_dark">#121212</color> <!-- Dark Mode Background -->
+
 </resources>
