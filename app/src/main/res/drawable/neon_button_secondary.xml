@@ -2,7 +2,7 @@
     android:color="@color/neon_glow">
     <item>
         <shape>
-            <solid android:color="@color/neon_blue"/>
+            <solid android:color="@color/neon_yellow"/>
             <corners android:radius="20dp"/>
         </shape>
     </item>

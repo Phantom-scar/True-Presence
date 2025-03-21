@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OtherFeaturesActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- 🗺 OpenStreetMap View -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/osmMapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:contentDescription="@string/osm_map_description"/> <!-- ✅ Accessibility improvement -->
+
+    <!-- 💾 Save Geofence Button -->
+    <Button
+        android:id="@+id/saveGeofenceButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/save_geofence"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_cyan_button"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/save_geofence_button"
+        />
+</LinearLayout>

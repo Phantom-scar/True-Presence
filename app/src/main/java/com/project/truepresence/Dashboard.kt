@@ -1,10 +1,11 @@
 package com.project.truepresence
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.animation.AnimationUtils
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.project.truepresence.adapters.FeatureAdapter  // ✅ Import FeatureAdapter
+import com.project.truepresence.models.FeatureItem      // ✅ Import FeatureItem
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -12,46 +13,20 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        // Feature Cards
-        val profileFeature = findViewById<LinearLayout>(R.id.profileFeature)
-        val facialAttendanceFeature = findViewById<LinearLayout>(R.id.facialAttendanceFeature)
-        val geofenceFeature = findViewById<LinearLayout>(R.id.geofenceFeature)
-        val attendanceLogsFeature = findViewById<LinearLayout>(R.id.attendanceLogsFeature)
-        val otherFeature = findViewById<LinearLayout>(R.id.otherFeature)
-
-        // Apply Click Animations
-        applyClickEffect(profileFeature)
-        applyClickEffect(facialAttendanceFeature)
-        applyClickEffect(geofenceFeature)
-        applyClickEffect(attendanceLogsFeature)
-        applyClickEffect(otherFeature)
-
-        // Navigation
-        profileFeature.setOnClickListener {
-            startActivity(Intent(this, ProfileActivity::class.java))
-        }
-
-        facialAttendanceFeature.setOnClickListener {
-            startActivity(Intent(this, FacialAttendanceActivity::class.java))
-        }
-
-        geofenceFeature.setOnClickListener {
-            startActivity(Intent(this, GeofenceActivity::class.java))
-        }
-
-        attendanceLogsFeature.setOnClickListener {
-            startActivity(Intent(this, AttendanceLogsActivity::class.java))
-        }
-
-        otherFeature.setOnClickListener {
-            startActivity(Intent(this, OtherFeaturesActivity::class.java))
-        }
+        // RecyclerView for Feature Cards
+        val featureRecyclerView = findViewById<RecyclerView>(R.id.featureRecyclerView)
+        featureRecyclerView.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        featureRecyclerView.adapter = FeatureAdapter(this, getFeatureList())  // ✅ Works now
     }
 
-    private fun applyClickEffect(view: LinearLayout) {
-        val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
-        view.setOnClickListener {
-            it.startAnimation(bounceAnimation)
-        }
+    private fun getFeatureList(): List<FeatureItem> {
+        return listOf(
+            FeatureItem(R.drawable.ic_profile, R.string.profile1, ProfileActivity::class.java),
+            FeatureItem(R.drawable.ic_face_scan, R.string.facial_attendance, FacialAttendanceActivity::class.java),
+            FeatureItem(R.drawable.ic_location, R.string.geo_fence, GeofenceActivity::class.java),
+            FeatureItem(R.drawable.ic_logs, R.string.attendance_logs, AttendanceLogsActivity::class.java),
+            FeatureItem(R.drawable.ic_other, R.string.more_features, OtherFeaturesActivity::class.java)
+        )
     }
 }

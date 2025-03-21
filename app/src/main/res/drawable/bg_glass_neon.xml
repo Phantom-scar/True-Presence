@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/cyan_transparent"/>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/neon_grid_pattern" android:tileMode="repeat"/>
+    </item>
+</layer-list>

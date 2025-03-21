@@ -6,8 +6,6 @@
     <color name="white">#FFFFFF</color>
 
     <!-- Neon Colors -->
-    <color name="neon_blue">#00FFFF</color>  <!-- Cyber Blue -->
-    <color name="neon_glow">#33FFFF</color>  <!-- Glow Effect -->
     <color name="glowy_blue">#0088FF</color>  <!-- Button Fill -->
 
     <!-- Stars and Space Theme -->
@@ -18,12 +16,20 @@
     <color name="input_border">#00FFCC</color>
 
     <color name="cyan_primary">#00E5FF</color>
-    <color name="cyan_transparent">#3300E5FF</color>
     <color name="gray_dark">#424242</color>
+    <color name="cyan_bright">#00E8D4</color>
     <color name="gray_light">#BDBDBD</color>
+    <color name="cyan_glow">#64E7EF</color>
 
     <color name="cyan">#00BCD4</color> <!-- Cyan (Main Theme) -->
     <color name="cyan_light">#80DEEA</color> <!-- Light Cyan -->
     <color name="background_dark">#121212</color> <!-- Dark Mode Background -->
+
+    <color name="neon_blue">#00FFFF</color>
+    <color name="neon_yellow">#FFFF00</color>
+    <color name="neon_white">#F8F8FF</color>
+    <color name="neon_glow">#33FFFF</color>
+    <color name="cyan_transparent">#B300D6FF</color>
+
 
 </resources>

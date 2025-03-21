@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- 🔹 Background -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,0h200v200h-200z" />
+
+    <!-- 🔹 Grid Lines (Cyan Neon) -->
+    <path
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="2"
+        android:pathData="M0,50h200 M0,100h200 M0,150h200 M50,0v200 M100,0v200 M150,0v200" />
+
+</vector>

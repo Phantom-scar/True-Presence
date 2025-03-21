@@ -30,4 +30,65 @@
         <item name="cornerRadius">10dp</item> <!-- ✅ Ensure rounded corners -->
     </style>
 
+        <!-- ⚪ Clean, Minimalist Input Style -->
+        <style name="FuturisticInput">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">50dp</item>
+            <item name="android:layout_marginTop">16dp</item>
+            <item name="android:padding">14dp</item>
+            <item name="android:textColor">@color/white</item>
+            <item name="android:textColorHint">@color/cyan_light</item>
+            <item name="android:background">@drawable/futuristic_input_bg</item>
+            <item name="android:fontFamily">@font/lato_black</item>
+            <item name="android:textSize">16sp</item>
+        </style>
+
+        <!-- 🔵 Glowing Primary Button -->
+        <style name="GlowingButton">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">50dp</item>
+            <item name="android:layout_marginTop">24dp</item>
+            <item name="android:background">@drawable/glowing_button</item>
+            <item name="android:textColor">@color/black</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:fontFamily">@font/lato_black</item>
+        </style>
+
+        <!-- ⚪ Subtle Secondary Button -->
+        <style name="GlowingButtonSecondary">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">50dp</item>
+            <item name="android:layout_marginTop">12dp</item>
+            <item name="android:background">@drawable/glowing_button_secondary</item>
+            <item name="android:textColor">@color/white</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:fontFamily">@font/lato_black</item>
+        </style>
+
+    <style name="FuturisticInput2">
+        <item name="android:background">@drawable/glass_input</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/neon_white</item>
+        <item name="android:textColorHint">@color/neon_blue</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="NeonButton">
+        <item name="android:background">@drawable/neon_button</item>
+        <item name="android:textColor">@color/neon_white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="NeonButtonSecondary">
+        <item name="android:background">@drawable/neon_button_secondary</item>
+        <item name="android:textColor">@color/neon_blue</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+
+
 </resources>
