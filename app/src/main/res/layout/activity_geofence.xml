@@ -51,6 +51,7 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_margin="16dp"
         android:paddingHorizontal="24dp"
-        android:contentDescription="@string/refresh_button"/>
+        android:contentDescription="@string/refresh_button"
+        android:elevation="10dp"/>
 
 </LinearLayout>

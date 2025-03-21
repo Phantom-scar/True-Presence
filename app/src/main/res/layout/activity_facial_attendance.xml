@@ -57,5 +57,6 @@
         android:background="@drawable/neon_button"
         android:textColor="@color/white"
         android:padding="12dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:elevation="10dp"/>
 </RelativeLayout>

@@ -51,7 +51,8 @@
         android:layout_below="@id/password"
         android:layout_marginTop="30dp"
         android:text="@string/Login"
-        style="@style/NeonButton" />
+        style="@style/NeonButton"
+        android:elevation="10dp"/>
 
     <!-- ⚪ Cyberpunk Register Button -->
     <Button
@@ -61,6 +62,7 @@
         android:layout_below="@id/loginButton"
         android:layout_marginTop="15dp"
         android:text="@string/register"
-        style="@style/NeonButtonSecondary" />
+        style="@style/NeonButtonSecondary"
+        android:elevation="10dp"/>
 
 </RelativeLayout>
